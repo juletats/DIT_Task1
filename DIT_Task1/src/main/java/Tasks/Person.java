@@ -32,7 +32,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "WithoutOOP.Person{" +
+        return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';

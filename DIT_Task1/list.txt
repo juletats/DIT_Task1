@@ -1,6 +1,0 @@
-WithoutOOP.Person{firstName='ok', lastName='ko'}
-WithoutOOP.Person{firstName='lol', lastName='lal'}
-WithoutOOP.Person{firstName='lol', lastName='lol'}
-WithoutOOP.Person{firstName='pop', lastName='lol'}
-WithoutOOP.Person{firstName='ok', lastName='ok'}
-WithoutOOP.Person{firstName='ksdc', lastName='ok'}

@@ -1,5 +1,7 @@
 package Tasks;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -60,7 +62,7 @@ public class Operations {
 
     public static void printInFile(List<Person> personList) {
 
-        try (FileWriter writer = new FileWriter("list.txt", false)) {
+        try (FileWriter writer = new FileWriter("list.txt")) {
             for (Person person :
                     personList) {
                 writer.write(person.toString());
@@ -71,6 +73,24 @@ public class Operations {
 
             System.out.println(ex.getMessage());
         }
+    }
+
+    public static void readFromFile() throws FileNotFoundException {
+
+        try (FileReader reader = new FileReader("list.txt")) {
+            int c;
+            while ((c = reader.read()) != -1) {
+                System.out.print((char) c);
+            }
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+    public static void clearFile() {
+        List<Person> emptyList = new ArrayList<>();
+        printInFile(emptyList);
+
     }
 
 }
